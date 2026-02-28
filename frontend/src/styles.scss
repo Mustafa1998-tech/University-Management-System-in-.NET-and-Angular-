@@ -1,0 +1,94 @@
+:root {
+  /* University Professional - Primary (Indigo/Navy) */
+  --color-primary-50: #e8eaf6;
+  --color-primary-100: #c5cae9;
+  --color-primary-200: #9fa8da;
+  --color-primary-300: #7986cb;
+  --color-primary-400: #5c6bc0;
+  --color-primary-500: #3f51b5;
+  --color-primary-600: #3949ab;
+  --color-primary-700: #303f9f;
+  --color-primary-800: #283593;
+  --color-primary-900: #1a237e;
+
+  /* Secondary / Accent (Cyan) */
+  --color-secondary-50: #e0f7fa;
+  --color-secondary-100: #b2ebf2;
+  --color-secondary-200: #80deea;
+  --color-secondary-300: #4dd0e1;
+  --color-secondary-400: #26c6da;
+  --color-secondary-500: #00bcd4;
+  --color-secondary-600: #00acc1;
+
+  /* Surfaces and text */
+  --color-bg: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-text-primary: #212121;
+  --color-text-secondary: #616161;
+  --color-border: #d9e2ec;
+
+  /* Status */
+  --color-success: #2e7d32;
+  --color-warning: #f9a825;
+  --color-danger: #c62828;
+
+  /* Layout tokens */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 2px 8px rgba(26, 35, 126, 0.08);
+  --shadow-md: 0 10px 28px rgba(26, 35, 126, 0.12);
+  --focus-ring: 0 0 0 3px rgba(63, 81, 181, 0.2);
+
+  /* Material compatibility hooks (safe even if Material is not installed) */
+  --mdc-theme-primary: var(--color-primary-500);
+  --mdc-theme-secondary: var(--color-secondary-600);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+a {
+  color: var(--color-primary-600);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Optional Angular Material bridge */
+.mat-toolbar,
+.mat-mdc-toolbar {
+  background: var(--color-primary-500);
+  color: #ffffff;
+}
+
+.mat-sidenav,
+.mat-drawer {
+  background: var(--color-primary-700);
+  color: #ffffff;
+}
+
+.mat-card,
+.mat-mdc-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+}

@@ -1,0 +1,26 @@
+# Build artifacts
+**/bin/
+**/obj/
+**/out/
+**/dist/
+
+# Package managers
+**/node_modules/
+**/.angular/cache/
+
+# IDE and editor settings
+**/.vs/
+**/.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs and temp files
+*.log
+*.tmp
+.temp_build_api/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
