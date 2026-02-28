@@ -6,6 +6,7 @@ The system provides role-based workflows for **Admin**, **Teacher**, and **Stude
 
 ## Table of Contents
 
+- [Quick Start (5 Minutes)](#quick-start-5-minutes)
 - [Project Overview](#project-overview)
 - [Key Features](#key-features)
 - [Tech Stack](#tech-stack)
@@ -18,6 +19,30 @@ The system provides role-based workflows for **Admin**, **Teacher**, and **Stude
 - [Run the Project](#run-the-project)
 - [Deployment](#deployment)
 - [Future Enhancements](#future-enhancements)
+
+## Quick Start (5 Minutes)
+
+1. Update backend configuration in `UniversityManagement.API/appsettings.json`:
+   - `ConnectionStrings:DefaultConnection`
+   - `Jwt:Key`, `Jwt:Issuer`, `Jwt:Audience`
+2. Apply database migrations:
+   ```bash
+   dotnet ef database update --project UniversityManagement.Infrastructure --startup-project UniversityManagement.API
+   ```
+3. Run backend API:
+   ```bash
+   dotnet run --project UniversityManagement.API
+   ```
+4. Run frontend in a second terminal:
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+5. Open:
+   - Frontend: `http://localhost:4200`
+   - API: `http://localhost:5219`
+   - Swagger: `http://localhost:5219/swagger`
 
 ## Project Overview
 
